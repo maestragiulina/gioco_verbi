@@ -18,7 +18,7 @@
             document.getElementById("myText").innerHTML = punteggiounicorno;
             if (punteggiounicorno < 9) {
                 var linkText =
-                    "<p class='final' style='margin-bottom: -65px; color: white; text-shadow: 2px 2px #000000;' >Hai ottenuto un punteggio basso: allenati ancora!</p><img id='imgpunti' src='rsc/low.png' class='arolij' />";
+                    "<p class='final' style='margin-bottom: -65px; color: white; text-shadow: 2px 2px #000000;' >Hai ottenuto un punteggio basso: allenati ancora!</p><img id='imgpunti' src='rsc/low.png' class='imgultimapagina' />";
                 $('#wrapperpunti').html();
                 $('#wrapperpunti').html(linkText);
                 setTimeout(function () {
@@ -27,7 +27,7 @@
             }
             if ((punteggiounicorno > 8 && punteggiounicorno < 14)) {
                 var linkText =
-                    "<p class='final' style='margin-bottom: -65px; color: white; text-shadow: 2px 2px #000000; '>Hai ottenuto un buon punteggio, ma puoi fare ancora meglio. Continua ad allenarti!</p><img id='imgpunti' src='rsc/medium.png' class='arolij' />";
+                    "<p class='final' style='margin-bottom: -65px; color: white; text-shadow: 2px 2px #000000; '>Hai ottenuto un buon punteggio, ma puoi fare ancora meglio. Continua ad allenarti!</p><img id='imgpunti' src='rsc/medium.png' class='imgultimapagina' />";
                 $('#wrapperpunti').html();
                 $('#wrapperpunti').html(linkText);
                 setTimeout(function () {
@@ -36,7 +36,7 @@
             }
             if (punteggiounicorno >= 14) {
                 var linkText =
-                    "<p class='final' style='margin-bottom: -65px; color: white; text-shadow: 2px 2px #000000;' >Hai ottenuto un ottimo punteggio: complimenti!</p><img id='imgpunti' src='rsc/high.png' class='arolij' />";
+                    "<p class='final' style='margin-bottom: -65px; color: white; text-shadow: 2px 2px #000000;' >Hai ottenuto un ottimo punteggio: complimenti!</p><img id='imgpunti' src='rsc/high.png' class='imgultimapagina' />";
                 $('#wrapperpunti').html();
                 $('#wrapperpunti').html(linkText);
             }
@@ -48,16 +48,14 @@
 
 <body>
     <div class="container-fluid">
-        <div class="row" style="background-color: #F886C4; border-radius: 20px; margin-top: 15px;">
-            <div class="col-3"><img src="rsc/inglese.png" style="  -webkit-transform: scaleX(-1);
-                transform: scaleX(-1);" class="img-fluid" alt="" /></div>
-            <div class="col-6">
-                <span class="align-middle">
+        <div class="row" style="background-color: #F886C4; border-radius: 20px; margin-top: 15px; height: 200px;">
+            <div class="col-md-3 text-center"><img src="rsc/inglese.png" style="  -webkit-transform: scaleX(-1);
+                transform: scaleX(-1);" class="logoimg" alt="" /></div>
+            <div class="col-md-6 text-center align-middle">
                     <h1 class="lg-text">Cerca il Verbo!</h1>
                     <p class="p-under">Cerca il verbo nelle frasi, clicca sulla risposta giusta e alla fine verrà calcolato il tuo punteggio!</p>
-                </span>
             </div>
-            <div class="col-3"><img src="rsc/logo.png" class="img-fluid" alt="" /></div>
+            <div class="col-md-3 text-center"><img src="rsc/logo.png" class="logoimg" alt="" /></div>
         </div>
     </div>
 

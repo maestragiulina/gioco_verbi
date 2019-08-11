@@ -13,49 +13,52 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
         integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <script src="custom.js"></script>
-    <link rel="stylesheet" href="creative.css">
+    
     <link rel="stylesheet" href="custom.css">
 </head>
 
 <body>
     <div class="container-fluid">
-        <div class="row" style="background-color: #F886C4; border-radius: 20px; margin-top: 15px;">
-            <div class="col-3"><img src="rsc/inglese.png" style="  -webkit-transform: scaleX(-1);
-                transform: scaleX(-1);" class="img-fluid" alt="" /></div>
-            <div class="col-6">
-                <span class="align-middle">
+        <div class="row" style="background-color: #F886C4; border-radius: 20px; margin-top: 15px; height: 200px;">
+            <div class="col-md-3 text-center"><img src="rsc/inglese.png" style="  -webkit-transform: scaleX(-1);
+                transform: scaleX(-1);" class="logoimg" alt="" /></div>
+            <div class="col-md-6 text-center align-middle">
                     <h1 class="lg-text">Cerca il Verbo!</h1>
                     <p class="p-under">Cerca il verbo nelle frasi, clicca sulla risposta giusta e alla fine verrà calcolato il tuo punteggio!</p>
-                </span>
             </div>
-            <div class="col-3"><img src="rsc/logo.png" class="img-fluid" alt="" /></div>
+            <div class="col-md-3 text-center"><img src="rsc/logo.png" class="logoimg" alt="" /></div>
         </div>
     </div>
 
-    <div class="container-fluid">
+    <div id="containerwall" class="container-fluid">
         <br />
         <div class="row">
-            <div class="col-md-12">
+            <div class="col-md-2">
+
+            </div>
+            <div class="col-md-10">
                 <div class="row" style="text-align: center;">
-                    <img src="rsc/lato.png" class="arolij" />
-                <div class="answer-box d-inline">
-                    <p id="risposta1" onclick="rispostasbagliata()" class="risposta">Tra</p>
-                </div>
-                <div class="answer-box d-inline">
-                    <p id="risposta2" onclick="rispostasbagliata()" class="risposta">poco</p>
-                </div>
-                <div class="answer-box d-inline">
-                    <p id="risposta3" onclick="rispostaesatta()" class="risposta">avrò</p>
-                </div>
-                <div class="answer-box d-inline">
-                    <p id="risposta4" onclick="rispostasbagliata()" class="risposta">sicuramente</p>
-                </div>
-                <div class="answer-box d-inline">
-                    <p id="risposta5" onclick="rispostasbagliata()" class="risposta">fame.</p>
-                </div>
+                    <div class="answer-box d-inline">
+                        <p id="risposta1" onclick="rispostasbagliata()" class="risposta">Tra</p>
+                    </div>
+                    <div class="answer-box d-inline">
+                        <p id="risposta2" onclick="rispostasbagliata()" class="risposta">poco</p>
+                    </div>
+                    <div class="answer-box d-inline">
+                        <p id="risposta3" onclick="rispostaesatta()" class="risposta">avrò</p>
+                    </div>
+                    <div class="answer-box d-inline">
+                        <p id="risposta4" onclick="rispostasbagliata()" class="risposta">sicuramente</p>
+                    </div>
+                    <div class="answer-box d-inline">
+                        <p id="risposta5" onclick="rispostasbagliata()" class="risposta">fame.</p>
+                    </div>
                 <div id="numberquestions"><p id="actualnumber" class="d-inline">10</p><p id="allnumber" class="d-inline">/15</p></div>
             </div>
         </div>
+        <div class="col-md-2">
+                
+            </div>
     </div>
 
     <audio id="correctaudio" src="rsc/rispostaesatta.wav"></audio>

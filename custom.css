@@ -38,7 +38,7 @@
     color: white;
     font-family: 'Bangers', cursive;
     letter-spacing: 3px;
-    margin-top: 100px;
+    margin-top: 20px;
     text-align: center;
     text-shadow: 2px 2px #000000;
 }
@@ -47,7 +47,6 @@
 }
 
 .answer-box{
-    margin-top: 200px;
     margin-left: 20px;
     margin-right: 20px;
     height: 85px;
@@ -97,28 +96,27 @@
     font-weight: 600;
     font-family: 'Acme', sans-serif;
 }
-.col-md-3{
+.col-md-2{
     background-color: transparent;
     border-radius: 20px;
 }
 
-.col-md-12{
+#containerwall{
 background-color: transparent;
 border-radius: 20px;
-border-left: 10px white solid;
 background-image: url(candywall.jpg);
 border-radius: 20px;
-border-left: 10px white solid;
-background-position: center;
+background-position: top;
 background-repeat: no-repeat;
 background-size: cover;
+min-height: 400px;
+margin-top: 20px
 }
 
 .arolij{
 margin-top: 10px;
 margin-bottom: 10px;
-width: 400px;
-height: 400px;
+width: 100%;
 -webkit-transform: scaleX(-1);
 transform: scaleX(-1);
 }
@@ -181,4 +179,13 @@ color: black;
 #punteggioclass{
     background-color: #F886C4!important;
     background-image: none !important;
+}
+
+.col-md-10 .row{
+    text-align: center !important;
+    margin-top: 120px !important;
+}
+
+.logoimg{
+    width:200px;
 }
